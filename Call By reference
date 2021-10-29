@@ -1,0 +1,21 @@
+#include<stdio.h>
+void disp(int &,int &);
+main() 
+{
+	int a,b;
+	printf("Enter value of a and b:\n");
+	scanf("%d %d",&a,&b);
+	printf("Value of a before function : %d\n",a);
+	printf("Value of b before function : %d\n",b);
+	
+	disp(a,b);
+	printf("Value of  a after function : %d\n",a);
+	printf("Value of b after function  : %d\n",b);
+}
+void disp(int &a,int &b)
+{
+	a=a+10;
+	b=b+10;
+	printf("Value of a inside function : %d\n",a);
+	printf("Value of b inside function : %d\n",b);
+}
